@@ -22,17 +22,22 @@ namespace PRAKTIKA
     {
         public MainWindow()
         {
-            double x, x2, y, a;
-            x = Convert.ToDouble(Minimum.Text); /// Минимум
-            x2 = Convert.ToDouble(Maximum.Text); /// Максимум
-            a = Convert.ToDouble(S.Text); /// Шаг
+            InitializeComponent();
+        }
+
+        private void Вычислить_Click(object sender, RoutedEventArgs e)
+        {
+            Double x, x2, y, a;
+            x = Convert.ToDouble(Minimum.Text);
+            x2 = Convert.ToDouble(Maximum.Text);
+            a = Convert.ToDouble(S.Text);
 
 
-            Otvet.Text += Convert.ToString("x" + "  |  " + "y" + "\n"); ///окновывода
+            Otvet.Text += Convert.ToString("x" + "  |  " + "y" + "\n");
             while (x <= x2)
             {
                 y = -0.23 * x * x + x;
-                Otvet.Text += Convert.ToString(x + "  |  " + y + "\n"); ///окновывода
+                Otvet.Text += Convert.ToString(x + "  |  " + y + "\n");
                 x += a;
             }
         }
