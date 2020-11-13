@@ -23,16 +23,16 @@ namespace PRAKTIKA
         public MainWindow()
         {
             double x, x2, y, a;
-            x = Convert.ToDouble(.Text); /// Минимум
-            x2 = Convert.ToDouble(.Text); /// Максимум
-            a = Convert.ToDouble(.Text); /// Шаг
+            x = Convert.ToDouble(Minimum.Text); /// Минимум
+            x2 = Convert.ToDouble(Maximum.Text); /// Максимум
+            a = Convert.ToDouble(S.Text); /// Шаг
 
 
-            .Text += Convert.ToString("x" + "  |  " + "y" + "\n"); ///окновывода
+            Otvet.Text += Convert.ToString("x" + "  |  " + "y" + "\n"); ///окновывода
             while (x <= x2)
             {
                 y = -0.23 * x * x + x;
-                .Text += Convert.ToString(x + "  |  " + y + "\n"); ///окновывода
+                Otvet.Text += Convert.ToString(x + "  |  " + y + "\n"); ///окновывода
                 x += a;
             }
         }

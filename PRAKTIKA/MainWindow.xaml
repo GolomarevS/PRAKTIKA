@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRAKTIKA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
-</Window>
+        Title="MainWindow" Height="400" Width="800">
+ 
+        <Grid Margin="10,0,0,31">
+            <Label Content="Min" HorizontalAlignment="Left" Margin="76,87,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label Content="Max" HorizontalAlignment="Left" Margin="76,137,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Label Content="Шаг (S)" HorizontalAlignment="Left" Margin="76,187,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox Name="Minimum" HorizontalAlignment="Left" Margin="182,95,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="Maximum" HorizontalAlignment="Left" Margin="182,143,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="S" HorizontalAlignment="Left" Margin="182,195,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button Click="Вычислить_Click" Content="Вычислить" Name="Вычислить" HorizontalAlignment="Left" Margin="148,260,0,0" VerticalAlignment="Top" Height="34" Width="74"  FontSize="14"/>
+            <TextBox Name="Otvet" HorizontalAlignment="Left" Margin="421,42,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="275"/>
+        </Grid>
+    </Window>
